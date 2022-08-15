@@ -1,5 +1,9 @@
-
 target/
 dbt_modules/
 logs/
 **/.DS_Store
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
