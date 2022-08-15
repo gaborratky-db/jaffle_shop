@@ -5,6 +5,6 @@ provider "registry.terraform.io/databricks/databricks" {
   version     = "1.2.0"
   constraints = "1.2.0"
   hashes = [
-    "h1:6QeoelYX8VeKmoM000XaIXUMMjIsD0aqUqkiD3ccNsc=",
+    "h1:Jq3mIUClP51ksuZu3O9TAhvS4RyI0Z5L1srCHwc184Q=",
   ]
 }
