@@ -11,8 +11,8 @@ resource "databricks_notebook" "query_customers" {
   )
 }
 
-resource "databricks_job" "jaffle_shop" {
-  name = "terrafood_jaffle_shop"
+resource "databricks_job" "jaffle_shop_warehouse" {
+  name = "jaffle_shop_warehouse"
 
   git_source {
     branch   = "main"
@@ -30,8 +30,8 @@ resource "databricks_job" "jaffle_shop" {
         "dbt run",
         "dbt test"
       ]
-      warehouse_id = var.sql_warehouse_id
       schema       = var.schema
+      warehouse_id = var.sql_warehouse_id
     }
 
     library {
