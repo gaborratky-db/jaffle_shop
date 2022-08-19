@@ -2,7 +2,7 @@ jaffle_shop:
   target: dev
   outputs:
     dev:
-      schema: default
+      schema: gaborratky
       host: "{{ env_var('DBT_HOST') }}"
       http_path: "sql/protocolv1/o/{{ env_var('DBT_ORG_ID') }}/{{ env_var('DBT_CLUSTER_ID') }}"
       token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
@@ -10,7 +10,7 @@ jaffle_shop:
       type: databricks
     logfood:
       catalog: hive_metastore
-      schema: default
+      schema: gaborratky
       host: adb-2548836972759138.18.azuredatabricks.net
       http_path: /sql/1.0/endpoints/c74767a0dca603eb
       token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
