@@ -8,6 +8,14 @@ jaffle_shop:
       token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
       threads: 1
       type: databricks
+    doublequote:
+      schema: gaborratky
+      host: "{{ env_var('DBT_HOST') }}"
+      http_path: >
+        sql/protocolv1/o/{{ env_var("DBT_ORG_ID") }}/{{ env_var("DBT_CLUSTER_ID") }}
+      token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
+      threads: 1
+      type: databricks
     logfood:
       catalog: hive_metastore
       schema: gaborratky
